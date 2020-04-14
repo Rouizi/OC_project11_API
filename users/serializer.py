@@ -18,7 +18,6 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 class EditProfileSerializer(serializers.ModelSerializer):
     user = serializers.CharField(source='user.username')
-    #user = UserSerializer()
 
     class Meta:
         model = Profile
